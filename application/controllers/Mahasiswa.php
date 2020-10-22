@@ -11,7 +11,7 @@ class Mahasiswa extends CI_Controller {
 
 	}
 	public function create(){
-		$$this->load->view('Mahasiswa/v_index')
+		$this->load->view('mahasiswa')
 	}
 	
 }
