@@ -37,16 +37,24 @@
 				<th>Alamat</th>
 				<th>Aksi</th>
 			</tr>
-			<tr>
-				<td>1</td>
-				<td>1810330063</td>
-				<td>Kholis Fikri</td>
-				<td>Mataram</td>
-				<td>
-					<a href="" class="btn btn-info btn-primary">Edit</a>
-					<a href="" class="btn btn-info btn-danger">Hapus</a>
-				</td>
-			</tr>
+
+			<?php
+			$no = 1;
+			foreach ($tabel as $isi) {
+			?>
+				<tr>
+
+					<td><?= $no++; ?></td>
+					<td><?= $isi->nim; ?></td>
+					<td><?= $isi->nama; ?></td>
+					<td><?= $isi->alamat; ?></td>
+					<td>
+						<a href="" class="btn btn-info btn-primary">Edit</a>
+						<a href="" class="btn btn-info btn-danger">Hapus</a>
+					</td>
+
+				</tr>
+			<?php } ?>
 		</table>
 
 	</div>
