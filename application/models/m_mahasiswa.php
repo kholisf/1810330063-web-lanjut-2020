@@ -9,4 +9,8 @@ class m_mahasiswa extends CI_Model
         // result == mysql_fetch_object()
         return $this->db->get($this->table)->result();
     }
+    public function simpanData($data)
+    {
+        $this->db->insert($this->table, $data);
+    }
 }

@@ -14,8 +14,8 @@
 		<div class="navbar-brand">Tugas</div>
 
 		<div class="navbar-nav">
-			<a href="" class="nav-link">Home</a>
-			<a href="" class="nav-link">Tambah Data</a>
+			<a href="<?= site_url('mahasiswa/index'); ?>" class="nav-link">Home</a>
+			<a href="<?= site_url('mahasiswa/tambah'); ?>" class="nav-link">Tambah Data</a>
 		</div>
 		<div class="navbar-nav ml-auto">
 			<a href="" class="nav-link">Kholis Fikri</a>
