@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
 
-    <title>Tambah Data</title>
+    <title>Edit Data</title>
     <link rel="stylesheet" href="<?= base_url('assets/bootstrap/css/bootstrap.min.css'); ?>">
 </head>
 
@@ -24,7 +24,7 @@
     </nav>
 
     <div class="alert alert-primary text-center mt-4">
-        Tambah Data Mahasiswa
+        Edit Data Mahasiswa
     </div>
     <div class="container">
         <div class="row">

@@ -35,4 +35,14 @@ class Mahasiswa extends CI_Controller
 		$this->m_mahasiswa->simpanData($data);
 		redirect('mahasiswa/index');
 	}
+	public function hapus($nim = '')
+	{
+		$this->m_mahasiswa->hapusdata($nim);
+		redirect('mahasiswa/index');
+	}
+
+	public function edit($nim = '')
+	{
+		$this->load->view('mahasiswa/v_edit');
+	}
 }

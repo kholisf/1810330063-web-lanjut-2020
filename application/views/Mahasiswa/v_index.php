@@ -49,8 +49,8 @@
 					<td><?= $isi->nama; ?></td>
 					<td><?= $isi->alamat; ?></td>
 					<td>
-						<a href="" class="btn btn-info btn-primary">Edit</a>
-						<a href="" class="btn btn-info btn-danger">Hapus</a>
+						<a href="<?= site_url("mahasiswa/edit/" . $isi->nim) ?>" class="btn btn-info btn-primary">Edit</a>
+						<a href="<?= site_url("mahasiswa/hapus/" . $isi->nim) ?>" class="btn btn-info btn-danger">Hapus</a>
 					</td>
 
 				</tr>
@@ -79,7 +79,7 @@
 				</td>
 				<td><?= $key['nama'] ?></td>
 			</tr>
-		<?php endforeach ?> -->
+			<?php endforeach ?> -->
 	</table>
 
 

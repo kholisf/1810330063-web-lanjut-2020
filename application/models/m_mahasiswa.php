@@ -13,4 +13,9 @@ class m_mahasiswa extends CI_Model
     {
         $this->db->insert($this->table, $data);
     }
+    public function hapusdata($id)
+    {
+        $this->db->where('nim', $id);
+        return $this->db->delete($this->table);
+    }
 }
