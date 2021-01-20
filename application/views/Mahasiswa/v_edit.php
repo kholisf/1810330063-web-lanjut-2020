@@ -33,27 +33,19 @@
                 <div class="card">
                     <div class="card-header">Form Data Mahasiswa</div>
                     <div class="card-body">
-                        <form action="<?= site_url('mahasiswa/proses_tambah'); ?>" method="post">
+                        <form action="<?= site_url('mahasiswa/proses_edit'); ?>" method="post">
                             <div class="form-group">
-
+                                <input type="hidden" name="txtid" value="<?= $tabel->id; ?>">
                                 <label for="">Nim</label>
-                                <input type="text" class="form-control" name="txtnim">
+                                <input type="text" class="form-control" name="txtnim" value="<?= $tabel->nim; ?>">
                                 <label for="">Nama</label>
-                                <input type="text" class="form-control" name="txtnama">
+                                <input type="text" class="form-control" name="txtnama" value="<?= $tabel->nama; ?>">
 
                             </div>
 
-
-
-
-
-
-
-
-
-                            <div class="form-group">
+                            <div class=" form-group">
                                 <label for="">Alamat</label>
-                                <textarea name="txtalamat" id="" cols="30" rows="3" class="form-control"></textarea>
+                                <textarea name="txtalamat" id="" cols="30" rows="3" class="form-control"><?= $tabel->alamat; ?></textarea>
                             </div>
                             <input type="submit" name="submit" value="Simpan" class="btn btn-primary">
                             <a href="<?= site_url('mahasiswa'); ?>" class="btn btn-warning">Batal</a>

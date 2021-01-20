@@ -31,7 +31,7 @@
 		<table class="table table-bordered table-sm">
 
 			<tr>
-				<th>No</th>
+				<th>no</th>
 				<th>Nim</th>
 				<th>Nama</th>
 				<th>Alamat</th>
@@ -44,13 +44,13 @@
 			?>
 				<tr>
 
-					<td><?= $no++; ?></td>
+					<td><?= $no++ ?></td>
 					<td><?= $isi->nim; ?></td>
 					<td><?= $isi->nama; ?></td>
 					<td><?= $isi->alamat; ?></td>
 					<td>
-						<a href="<?= site_url("mahasiswa/edit/" . $isi->nim) ?>" class="btn btn-info btn-primary">Edit</a>
-						<a href="<?= site_url("mahasiswa/hapus/" . $isi->nim) ?>" class="btn btn-info btn-danger">Hapus</a>
+						<a href="<?= site_url("mahasiswa/edit/" . $isi->id) ?>" class="btn btn-info btn-primary">Edit</a>
+						<a href="<?= site_url("mahasiswa/hapus/" . $isi->id) ?>" class="btn btn-info btn-danger">Hapus</a>
 					</td>
 
 				</tr>
